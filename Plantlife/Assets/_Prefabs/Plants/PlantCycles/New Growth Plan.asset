@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 388188d4d8eee45468605cfdc0556c2d, type: 3}
   m_Name: New Growth Plan
   m_EditorClassIdentifier: 
+  steps:
+  - action: 0
+  - action: 1
