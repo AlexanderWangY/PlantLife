@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5553365099297869670}
   - component: {fileID: 6131578671964273283}
   m_Layer: 0
-  m_Name: PlantCycle_Grass
+  m_Name: PlantCycle_Flower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifecycleStages:
-  - {fileID: 708100269573056587, guid: e5dde6c7a0b9a76478c25c6f59eee5fc, type: 3}
+  - {fileID: 5105218625125699069, guid: 2e1a16e3deed5b14da98075c3f319c0d, type: 3}
   - {fileID: 6662174415517180126, guid: 81dad7d5552c9a341b390c79338fe0a4, type: 3}
   currentStage: {fileID: 0}
   currentStageIndex: 0

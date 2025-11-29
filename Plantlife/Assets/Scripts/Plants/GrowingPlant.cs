@@ -56,15 +56,15 @@ public class GrowingPlant : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "water")
+        if(collision.gameObject.tag.ToLower() == "water")
         {
             PerformAction(PlantAction.WATER);
         }
-        if(collision.gameObject.tag == "trim")
+        if(collision.gameObject.tag.ToLower() == "trim")
         {
-            PerformAction(PlantAction.TRIM);
+            PerformAction(PlantAction.PRUNE);
         }
-        if(collision.gameObject.tag == "till")
+        if(collision.gameObject.tag.ToLower() == "till")
         {
             PerformAction(PlantAction.TILL);
         }
@@ -72,15 +72,15 @@ public class GrowingPlant : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "water")
+        if (other.gameObject.tag.ToLower() == "water")
         {
             PerformAction(PlantAction.WATER);
         }
-        if (other.gameObject.tag == "trim")
+        if (other.gameObject.tag.ToLower() == "prune")
         {
-            PerformAction(PlantAction.TRIM);
+            PerformAction(PlantAction.PRUNE);
         }
-        if (other.gameObject.tag == "till")
+        if (other.gameObject.tag.ToLower() == "till")
         {
             PerformAction(PlantAction.TILL);
         }
