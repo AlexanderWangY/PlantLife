@@ -34,6 +34,13 @@ public class GrowingPlant : MonoBehaviour
     /// </summary>
     public int renewableStageIndex = 0;
 
+    // it might be better to do this with raycasts, but I cannot be bothered
+    /// <summary>
+    /// A sphere that is able to capture interactions with tools.
+    /// All plants need this to interact with the triggers that come from tools when they are used.
+    /// </summary>
+    public SphereCollider toolInteractor;
+
     void Start()
     {
         if(growthPlan.steps.Count != lifecycleStages.Length)
@@ -47,14 +54,47 @@ public class GrowingPlant : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "water")
+        {
+            PerformAction(PlantAction.WATER);
+        }
+        if(collision.gameObject.tag == "trim")
+        {
+            PerformAction(PlantAction.TRIM);
+        }
+        if(collision.gameObject.tag == "till")
+        {
+            PerformAction(PlantAction.TILL);
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "water")
+        {
+            PerformAction(PlantAction.WATER);
+        }
+        if (other.gameObject.tag == "trim")
+        {
+            PerformAction(PlantAction.TRIM);
+        }
+        if (other.gameObject.tag == "till")
+        {
+            PerformAction(PlantAction.TILL);
+        }
+    }
+
     public void PerformAction(PlantAction action)
     {
         if (currentStageIndex >= growthPlan.steps.Count)
             return;
 
         GrowthStep step = growthPlan.steps[currentStageIndex];
+        Debug.Log("Performing action: " + action + " on step: " + growthPlan.steps[currentStageIndex].action);
 
-        if(action == PlantAction.PLANT_SEED)
+        if (action == PlantAction.PLANT_SEED)
         {
             GrowFirstStage();
         }
@@ -67,14 +107,15 @@ public class GrowingPlant : MonoBehaviour
     public void GrowFirstStage()
     {
         currentStage = Instantiate(lifecycleStages[currentStageIndex], transform);
+        currentStageIndex++;
     }
     public void GrowByOneStage()
     {
-        if(currentStageIndex < lifecycleStages.Length - 1)
+        if(currentStageIndex <= lifecycleStages.Length - 1)
         {
             Destroy(currentStage); currentStage = null;
-            currentStageIndex++;
             currentStage = Instantiate(lifecycleStages[currentStageIndex], transform);
+            currentStageIndex++;
         }
     }
 }

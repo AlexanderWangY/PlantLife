@@ -8,6 +8,7 @@ public enum PlantAction
     WATER,
     TILL,
     WAIT,
+    TRIM,
 }
 
 
