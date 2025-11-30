@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1425017330627238841}
+  - component: {fileID: 6205680745051438689}
+  - component: {fileID: 7378159236710913303}
   m_Layer: 0
   m_Name: PotBig
-  m_TagString: Untagged
+  m_TagString: tilledDirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +33,73 @@ Transform:
   m_Children:
   - {fileID: 2058355735824037298}
   - {fileID: 7813888608016799822}
+  - {fileID: 5306235582439198872}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6205680745051438689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8205735255276855367}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.29536507, y: 0.10465002, z: 0.27124533}
+  m_Center: {x: -0.0050624013, y: 0.4221151, z: -0.013809204}
+--- !u!114 &7378159236710913303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8205735255276855367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10378d0f9f8fd1498657b244b2ca177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantingPoint: {fileID: 5306235582439198872}
+--- !u!1 &8731198232236198349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5306235582439198872}
+  m_Layer: 0
+  m_Name: PlantingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5306235582439198872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8731198232236198349}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.481, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1425017330627238841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1952880946110829145
 PrefabInstance:
@@ -199,6 +267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EarthHill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689076489521159162, guid: 1936f238e71db4531bfe8d26742e2d98,
+        type: 3}
+      propertyPath: m_TagString
+      value: tilledDirt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
