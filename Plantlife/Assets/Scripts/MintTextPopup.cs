@@ -7,7 +7,7 @@ public class MintTextPopup : MonoBehaviour
     public GameObject textObject;
 
     [Tooltip("How long to keep the text visible (seconds)")]
-    public float showTime = 30f;
+    public float showTime = 50f;
 
     private Coroutine hideRoutine;
 
