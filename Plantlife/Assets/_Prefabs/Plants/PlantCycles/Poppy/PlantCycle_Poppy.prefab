@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3351559556998017658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1714965158794034764}
+  - component: {fileID: 1060069443145245635}
+  m_Layer: 0
+  m_Name: PlantCycle_Poppy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1714965158794034764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351559556998017658}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1060069443145245635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351559556998017658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f8ecdb07195e334f8bda7c53aa0064f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifecycleStages:
+  - {fileID: 8332390676224143539, guid: e1da11e86a9e8bc41a5342cbe6996422, type: 3}
+  - {fileID: 2558604941131537777, guid: 4ba5e998be877db4db6dd78e1ee0dce1, type: 3}
+  - {fileID: 2401154608860984671, guid: c66527fc78fb34545b20991e2a77d15d, type: 3}
+  - {fileID: 6444807355431749394, guid: eaf94854368d9ea45bda49ca7db3287c, type: 3}
+  currentStage: {fileID: 0}
+  currentStageIndex: 0
+  growthPlan: {fileID: 11400000, guid: aa91593ee859d4542950a35360ab1506, type: 2}
+  isRenewable: 0
+  renewableStageIndex: 0
+  toolInteractor: {fileID: 0}
