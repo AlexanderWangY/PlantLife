@@ -11,7 +11,7 @@ public class ShopUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moneyText.text = "Money Earned: $" + Inventory.instance.money.ToString();
-        plantCountText.text = "Plants Harvested: " + Inventory.instance.harvestedCount.ToString();
+        moneyText.text = "Money: $" + Inventory.instance.money.ToString();
+        plantCountText.text = "Plants in basket: " + Inventory.instance.harvestedPlants.Count.ToString();
     }
 }

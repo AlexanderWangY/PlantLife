@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SeedButton : MonoBehaviour
 {
     public SeedItem seed;
     public Transform spawnPoint;
+    public TMP_Text labelText;
+
+    private void Start()
+    {
+        labelText.text = seed.seedName + ": $" + seed.cost.ToString();
+    }
 
     public void OnBuy()
     { 

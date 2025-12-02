@@ -5,8 +5,8 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public static Inventory instance;
-    public int harvestedCount = 0;
-    public int money = 20;
+    public List<PlantItem> harvestedPlants = new List<PlantItem>();
+    public int money = 0;
 
 
     private void Awake()
@@ -24,8 +24,18 @@ public class Inventory : MonoBehaviour
 
     public void AddPlant(PlantItem plant)
     {
-        harvestedCount++;
-        money += plant.sellValue;
+        harvestedPlants.Add(plant);
+        Debug.Log($"Added {plant.itemName} to inventory. Total plants: {harvestedPlants.Count}");
     }
 
+    public void SellAll()
+    {
+        foreach (var p in harvestedPlants)
+        {
+            money += p.sellValue;
+            Debug.Log($"Sold {p.itemName} for {p.sellValue}. Total money: {money}");
+        }
+
+        harvestedPlants.Clear();
+    }
 }
