@@ -51,7 +51,10 @@ public class GrowingPlant : MonoBehaviour
 
     void Update()
     {
-
+        if (growthPlan.steps[currentStageIndex].action == PlantAction.WAIT)
+        {
+            StartCoroutine(GrowByWaiting());
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -117,5 +120,10 @@ public class GrowingPlant : MonoBehaviour
             currentStage = Instantiate(lifecycleStages[currentStageIndex], transform);
             currentStageIndex++;
         }
+    }
+    public IEnumerator GrowByWaiting()
+    {
+        yield return new WaitForSeconds(10f);
+        PerformAction(PlantAction.WAIT);
     }
 }

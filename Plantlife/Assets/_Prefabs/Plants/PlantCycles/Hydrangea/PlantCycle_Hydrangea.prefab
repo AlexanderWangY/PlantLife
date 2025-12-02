@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5553365099297869670}
   - component: {fileID: 6131578671964273283}
   m_Layer: 0
-  m_Name: PlantCycle_Flower
+  m_Name: PlantCycle_Hydrangea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,11 +46,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifecycleStages:
-  - {fileID: 5105218625125699069, guid: 2e1a16e3deed5b14da98075c3f319c0d, type: 3}
-  - {fileID: 6662174415517180126, guid: 81dad7d5552c9a341b390c79338fe0a4, type: 3}
+  - {fileID: 708100269573056587, guid: e5dde6c7a0b9a76478c25c6f59eee5fc, type: 3}
+  - {fileID: 2558604941131537777, guid: 95c78f320b6adea499a1c4267e63d4c0, type: 3}
+  - {fileID: 2401154608860984671, guid: 1242d09e602516044a568d0677dd5a65, type: 3}
+  - {fileID: 1950122683325999782, guid: 2043dd56b3063c748b3885ca386ad5e5, type: 3}
   currentStage: {fileID: 0}
   currentStageIndex: 0
-  growthPlan: {fileID: 11400000, guid: 1b9993ef4071ed8408dcf337dbe72508, type: 2}
+  growthPlan: {fileID: 11400000, guid: 09320cd5cf491da4f86032c960ac5c75, type: 2}
   isRenewable: 0
   renewableStageIndex: 0
   toolInteractor: {fileID: 0}

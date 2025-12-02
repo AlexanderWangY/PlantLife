@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 388188d4d8eee45468605cfdc0556c2d, type: 3}
-  m_Name: New Growth Plan
+  m_Name: GrowthPlan_Hydrangea
   m_EditorClassIdentifier: 
   steps:
   - action: 0
+  - action: 2
   - action: 1
+  - action: 3
