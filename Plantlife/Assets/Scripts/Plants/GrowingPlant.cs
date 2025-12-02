@@ -19,6 +19,13 @@ public class GrowingPlant : MonoBehaviour
     public GameObject currentStage;
     public int currentStageIndex = 0;
 
+    /// <summary>
+    /// The plant item that this plant will yield when harvested.
+    /// Also, the particle effect to play when harvested. (Can be null)
+    /// </summary>
+    public PlantItem plantItem;
+    public ParticleSystem harvestFx;
+
     public GrowthPlan growthPlan;
 
     /// <summary>
@@ -71,6 +78,10 @@ public class GrowingPlant : MonoBehaviour
         {
             PerformAction(PlantAction.TILL);
         }
+        if (collision.gameObject.tag.ToLower() == "shovel")
+        {
+            Harvest();
+        }
     }
     
     private void OnTriggerEnter(Collider other)
@@ -86,6 +97,10 @@ public class GrowingPlant : MonoBehaviour
         if (other.gameObject.tag.ToLower() == "till")
         {
             PerformAction(PlantAction.TILL);
+        }
+        if (other.gameObject.tag.ToLower() == "shovel")
+        {
+            Harvest();
         }
     }
 
@@ -125,5 +140,34 @@ public class GrowingPlant : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         PerformAction(PlantAction.WAIT);
+    }
+
+    public void Harvest()
+    {
+        if (currentStageIndex < lifecycleStages.Length)
+        {
+            Debug.LogWarning("Trying to harvest a plant that is not fully grown: " + name);
+            return;
+        }
+
+        // Play harvesting particle effect
+        if (harvestFx != null)
+            Instantiate(harvestFx, transform.position, Quaternion.identity);
+
+        Inventory.instance.AddPlant(plantItem);
+
+        // If the plant is renewable, reset to the renewable stage
+        if (isRenewable)
+        {
+            Destroy(currentStage); currentStage = null;
+            currentStageIndex = renewableStageIndex;
+            currentStage = Instantiate(lifecycleStages[currentStageIndex], transform);
+            currentStageIndex++;
+        }
+        else
+        {
+            // Otherwise, destroy the plant
+            Destroy(gameObject);
+        }
     }
 }
