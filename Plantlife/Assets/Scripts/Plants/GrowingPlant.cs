@@ -51,7 +51,7 @@ public class GrowingPlant : MonoBehaviour
 
     void Update()
     {
-        if (growthPlan.steps[currentStageIndex].action == PlantAction.WAIT)
+        if (currentStageIndex < growthPlan.steps.Count && growthPlan.steps[currentStageIndex].action == PlantAction.WAIT)
         {
             StartCoroutine(GrowByWaiting());
         }

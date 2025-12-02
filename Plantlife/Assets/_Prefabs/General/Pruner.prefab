@@ -281,7 +281,7 @@ MonoBehaviour:
   grabInteractable: {fileID: 0}
   pressThreshold: 0.1
   useAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Use
       m_Type: 0
@@ -291,7 +291,8 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1 &2807174947285807970
 GameObject:
   m_ObjectHideFlags: 0

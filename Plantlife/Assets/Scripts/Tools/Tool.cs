@@ -56,7 +56,6 @@ public class Tool : MonoBehaviour
 
     public virtual void Use()
     {
-        Debug.Log("Using " + name);
         if (toolUseTrigger == null)
             toolUseTrigger = GetComponent<SphereCollider>();
 
