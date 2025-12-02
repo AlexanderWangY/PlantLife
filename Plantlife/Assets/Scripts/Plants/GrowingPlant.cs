@@ -66,7 +66,8 @@ public class GrowingPlant : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag.ToLower() == "water")
+        Debug.Log("Collision with: " + collision.gameObject.name + " tag: " + collision.gameObject.tag);
+        if (collision.gameObject.tag.ToLower() == "water")
         {
             PerformAction(PlantAction.WATER);
         }
@@ -78,14 +79,11 @@ public class GrowingPlant : MonoBehaviour
         {
             PerformAction(PlantAction.TILL);
         }
-        if (collision.gameObject.tag.ToLower() == "shovel")
-        {
-            Harvest();
-        }
     }
     
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Trigger with: " + other.gameObject.name + " tag: " + other.gameObject.tag);
         if (other.gameObject.tag.ToLower() == "water")
         {
             PerformAction(PlantAction.WATER);
