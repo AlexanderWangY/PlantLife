@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43637d19683d0bf41b60475927fc0f69, type: 3}
-  m_Name: Poppy_Item
+  m_Name: Cabbage_item
   m_EditorClassIdentifier: 
-  itemName: Poppy
-  itemIcon: {fileID: 21300000, guid: 76f4720cdf6aa9c4191ef6e2df129bbd, type: 3}
-  sellValue: 9
+  itemName: Cabbage
+  itemIcon: {fileID: 21300000, guid: 8f63c28e62304e0479aebc5fbade37b3, type: 3}
+  sellValue: 6

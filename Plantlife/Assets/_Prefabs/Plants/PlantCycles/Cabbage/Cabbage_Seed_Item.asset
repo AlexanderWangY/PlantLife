@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43637d19683d0bf41b60475927fc0f69, type: 3}
-  m_Name: Poppy_Item
+  m_Script: {fileID: 11500000, guid: 0e2294ca12af07649a1c423cd188d958, type: 3}
+  m_Name: Cabbage_Seed_Item
   m_EditorClassIdentifier: 
-  itemName: Poppy
-  itemIcon: {fileID: 21300000, guid: 76f4720cdf6aa9c4191ef6e2df129bbd, type: 3}
-  sellValue: 9
+  seedName: Cabbage
+  seedPrefab: {fileID: 8332390676224143539, guid: 61610885beb4a8146b252b008bfd7983,
+    type: 3}
+  cost: 3

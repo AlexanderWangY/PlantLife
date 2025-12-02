@@ -40,7 +40,7 @@ public class SkyboxCycle : MonoBehaviour
         RenderSettings.skybox = daySkybox;
         _currentSkybox = daySkybox;
 
-        _sunAngle = 0f;
+        _sunAngle = 100f;
 
         InvokeRepeating(nameof(SwitchSkybox), dayLength / 2f, dayLength / 2f);
     }
