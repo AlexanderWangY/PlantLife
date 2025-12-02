@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e2294ca12af07649a1c423cd188d958, type: 3}
   m_Name: TomatoSeedItem
   m_EditorClassIdentifier: 
-  seedName: 
+  seedName: Tomato
   seedPrefab: {fileID: 7178001207531070315, guid: 087c71e73cfa7b148ad3eb3f90075ea2,
     type: 3}
   cost: 3

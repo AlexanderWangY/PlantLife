@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43637d19683d0bf41b60475927fc0f69, type: 3}
-  m_Name: Tulip_Item
+  m_Script: {fileID: 11500000, guid: 388188d4d8eee45468605cfdc0556c2d, type: 3}
+  m_Name: MintGrowthPlan
   m_EditorClassIdentifier: 
-  itemName: Tulip
-  itemIcon: {fileID: 21300000, guid: 057d4710a965f174c93e7666b83c976d, type: 3}
-  sellValue: 9
+  steps:
+  - action: 0
+  - action: 1
+  - action: 1
+  - action: 3

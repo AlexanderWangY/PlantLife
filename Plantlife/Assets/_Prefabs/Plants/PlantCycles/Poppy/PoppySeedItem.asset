@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43637d19683d0bf41b60475927fc0f69, type: 3}
-  m_Name: Tulip_Item
+  m_Script: {fileID: 11500000, guid: 0e2294ca12af07649a1c423cd188d958, type: 3}
+  m_Name: PoppySeedItem
   m_EditorClassIdentifier: 
-  itemName: Tulip
-  itemIcon: {fileID: 21300000, guid: 057d4710a965f174c93e7666b83c976d, type: 3}
-  sellValue: 9
+  seedName: Poppy Seed
+  seedPrefab: {fileID: 6268991539769802968, guid: 8edb8a5f044badf459d8df2d2193271c,
+    type: 3}
+  cost: 6
