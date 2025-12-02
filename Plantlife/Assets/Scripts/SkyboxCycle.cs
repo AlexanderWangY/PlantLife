@@ -26,7 +26,7 @@ public class SkyboxCycle : MonoBehaviour
     private float _transitionTimer = 0f;
     private bool _transitioning = false;
 
-    private float _sunAngle = 0f; // 0–360 degrees
+    private float _sunAngle = 120f; // 0–360 degrees
 
     private void Start()
     {
@@ -40,7 +40,7 @@ public class SkyboxCycle : MonoBehaviour
         RenderSettings.skybox = daySkybox;
         _currentSkybox = daySkybox;
 
-        _sunAngle = 100f;
+        _sunAngle = 120f;
 
         InvokeRepeating(nameof(SwitchSkybox), dayLength / 2f, dayLength / 2f);
     }

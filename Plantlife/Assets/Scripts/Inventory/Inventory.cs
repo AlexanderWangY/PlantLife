@@ -6,7 +6,7 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory instance;
     public List<PlantItem> harvestedPlants = new List<PlantItem>();
-    public int money = 0;
+    public int money = 10;
 
 
     private void Awake()
