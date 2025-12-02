@@ -50,6 +50,9 @@ MonoBehaviour:
   - {fileID: 6662174415517180126, guid: 81dad7d5552c9a341b390c79338fe0a4, type: 3}
   currentStage: {fileID: 0}
   currentStageIndex: 0
+  plantItem: {fileID: 11400000, guid: c5772b1c705838c4297bb509462c4bb8, type: 2}
+  harvestFx: {fileID: 7211104003629232009, guid: 39a666147be2ab2438707ff32a87aaf6,
+    type: 3}
   growthPlan: {fileID: 11400000, guid: 1b9993ef4071ed8408dcf337dbe72508, type: 2}
   isRenewable: 0
   renewableStageIndex: 0
