@@ -412,7 +412,7 @@ PrefabInstance:
     - target: {fileID: 3605739594399119152, guid: b3f7dce9f4902214c96721478cf4e8ef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 3605739594399119152, guid: b3f7dce9f4902214c96721478cf4e8ef,
         type: 3}
@@ -707,8 +707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710f14212e43571438fe47f0ac02b20a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  harvestedPlants: []
-  money: 0
+  harvestedCount: 0
+  money: 10
 --- !u!4 &2136852106
 Transform:
   m_ObjectHideFlags: 0
