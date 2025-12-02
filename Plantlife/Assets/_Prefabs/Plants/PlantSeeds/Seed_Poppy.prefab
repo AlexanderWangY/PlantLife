@@ -248,7 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 025fb4a12b557a342bd3793ca629e0dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantCycle: {fileID: 0}
+  plantCycle: {fileID: 1060069443145245635, guid: 00943a8a95cc48b4ba45267fa0bf196a,
+    type: 3}
 --- !u!1001 &670382954764233787
 PrefabInstance:
   m_ObjectHideFlags: 0

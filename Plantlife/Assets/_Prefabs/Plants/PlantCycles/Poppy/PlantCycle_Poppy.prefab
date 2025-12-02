@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714965158794034764}
   - component: {fileID: 1060069443145245635}
+  - component: {fileID: 8565003258013144349}
   m_Layer: 0
   m_Name: PlantCycle_Poppy
   m_TagString: Untagged
@@ -51,7 +52,31 @@ MonoBehaviour:
   - {fileID: 6444807355431749394, guid: eaf94854368d9ea45bda49ca7db3287c, type: 3}
   currentStage: {fileID: 0}
   currentStageIndex: 0
+  plantItem: {fileID: 11400000, guid: 84f301e9dc2630e4197071fffb0f4a6f, type: 2}
+  harvestFx: {fileID: 7211104003629232009, guid: 39a666147be2ab2438707ff32a87aaf6,
+    type: 3}
   growthPlan: {fileID: 11400000, guid: aa91593ee859d4542950a35360ab1506, type: 2}
   isRenewable: 0
   renewableStageIndex: 0
   toolInteractor: {fileID: 0}
+--- !u!135 &8565003258013144349
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3351559556998017658}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

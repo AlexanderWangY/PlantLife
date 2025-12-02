@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1458477095146663657}
   - component: {fileID: -6822696324647913146}
+  - component: {fileID: 8764511087316781948}
   m_Layer: 0
   m_Name: PlantCycle_Tulip
   m_TagString: Untagged
@@ -51,7 +52,31 @@ MonoBehaviour:
   - {fileID: 2630349724537830605, guid: 838ac240d6d82a74da11c3d56279a95a, type: 3}
   currentStage: {fileID: 0}
   currentStageIndex: 0
+  plantItem: {fileID: 11400000, guid: 0ce2a17e15aaaa143ad8982873c967a4, type: 2}
+  harvestFx: {fileID: 7211104003629232009, guid: 39a666147be2ab2438707ff32a87aaf6,
+    type: 3}
   growthPlan: {fileID: 11400000, guid: b215f89f8399fd449ba695f578ca5180, type: 2}
   isRenewable: 0
   renewableStageIndex: 0
   toolInteractor: {fileID: 0}
+--- !u!135 &8764511087316781948
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574445256140067660}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
